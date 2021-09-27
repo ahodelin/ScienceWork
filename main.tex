@@ -1,0 +1,55 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\pagenumbering{gobble}
+\usepackage[babel]{csquotes}
+\usepackage[style=numeric,maxbibnames=100,backend=biber]{biblatex}
+\addbibresource{bibliography/biblio.bib}  
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords: }} #1
+}
+
+\title{Our titel}
+
+
+\date{} % Comment this line to show today's date
+
+\begin{document}
+\maketitle
+
+  \noindent\author{\textbf{Oliver H\"olsken$^{1}$, Felix Hans$^{2}$, Sami George Habib$^{3}$, Abel Hodelin Hernandez$^{3}$} \\ \\
+	\small $^{1}$Charité – Universitätsmedizin Berlin, Berlin, Germany \\
+	\small $^{2}$Medical Center - University of Freiburg, Freiburg, Germany \\
+	\small $^{3}$University Medical Center of the Johannes Gutenberg University Mainz, Mainz, Germany \\
+}
+\hrule
+\input{0abstract}
+ \hspace{10pt}
+
+\keywords{COMBINE, containers, data}
+
+\hrule
+
+\input{1introduction}
+
+\input{2methods}
+
+\input{3results}
+
+\input{4conclusions}
+
+\noindent\small \textbf{Authors' contribution:} ... \\ 
+\noindent\small \textbf{Competing interests:} The authors declare no competing interests.\\
+\noindent\small \textbf{Acknoledgement:}...
+
+\nocite{*}           %  Die gesamte Literaturbibliothek wird eingefügt
+\printbibliography 
+
+\end{document}
