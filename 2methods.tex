@@ -1,4 +1,4 @@
-\section*{Materials and methods}
+\section*{Materials and methods} \label{matmet}
 
 The purpose of this project was divided into four groups. The tasks of each of them were the management of a documentation platform, review of exiting materials, comparison of provided models, graphical representation, and supply of a model script.
 
@@ -6,4 +6,10 @@ To provide the model from Bachmann \textit{et. al.}\cite{bachmannmodel} as a Ful
 
 To achieve this goal, we research the literature about the Bachmann model and the COMBINE Archive, along with modeling file formats, checking the reproducibility of the COMBINE structure and software tools that had been used. In addition, we established communication channels, developed a rough schedule, provided a template for documentation, and periodically reviewed intermediate deliverables. 
 
-In our research, we found six SBML-Bachmann models, one of them as support information of Bachmann \textit{et. al.} \cite{bachmannmodel}, this was the first delivered model. The others come from two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels}.
+In our research, we found six SBML-Bachmann models in two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels} (see Results). We choose the last model from 14th November 2019 to perform other tasks in our project, because it provides complementary files for the simulation.
+
+We found and tested five software tools for the simulation of biological systems. \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online}, Systems Biology tool for the construction, modification, and simulation of kinetic models and the storage of curated models \cite{jwsonline}; on this repository was one of the found models. \hyperlink{https://cat.bio.informatik.uni-rostock.de/}{Webviewer Uni Rostock} (CombineArchiveWeb), a tool to visualize and manage COMBINE files \cite{combine}; this is the goal application of our project. \hyperlink{http://copasi.org/}{COPASI}, a software application for the simulation and analysis of biochemical networks and their dynamics \cite{copasi}. \hyperlink{https://sed-ml.org/}{SED-ML}, a suite of tools for creating, editing, simulating and validating SED-ML files \cite{sedml}. \hyperlink{https://tellurium.readthedocs.io/en/latest/}{Tellurium},  a tool to model, simulate and analyze biochemical systems \cite{tellurium}.
+
+One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the SBGN.
+Consequently, we performed research but we do not found any SBGN of this model. Therefore, we decided to create an SBGN map based on Le Novère \cite{sbgnnovere} and Touré \textit{et. al.} \cite{sbgntoure}.
+In this step, we select the SBGN language and lastly, we created the Process Description (PD) map with the software Newt Editor \cite{newteditor}.  To validate the SBGN we used the feature LibSBGN from Newt Editor as well as imported the SBGN-ML into VANTED/SBGN-ED, Krayon for SBGN, and SBGNViz. Lastly, we cleaned up the map and colored the relevant features in the model to improve the developed map.
