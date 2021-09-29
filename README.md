@@ -47,3 +47,28 @@ Bachmann Modell kurz beschreiben
 Ansonsten eher generell über das Archive 
 
 Was ist der Schritt weiter i.Vg. zu Fully Featured Archive?
+
+
+Dagmar Waltemath 
+
+19:57 
+
+https://www.jmir.org/  
+
+Leonard Knegendorf 
+
+19:58 
+
+@dagmar reden wir nicht über das? https://academic.oup.com/jamia 
+
+Dagmar Waltemath 
+
+19:59 
+
+über beide :D Ich hatte verstanden, dass Martin meinte JMIR wäre am flexibelsten in den Vorgaben. 
+
+Dagmar Waltemath 
+
+20:10 
+
+https://combine-org.github.io/events/ 
