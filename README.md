@@ -22,3 +22,28 @@ https://gmds-tmf-2021.de/wp-content/uploads/2021/09/PDF-GMDS_TMF_2021_Programm-1
 
 
 chat meeting
+
+
+# CHAT MEETING 29.09.2021
+
+2500-3500 Wörter 
+
+Wichtig: sehr gutes Zitieren 
+
+Sinn des Papers: mit dem COMBINE Archive kann man reproduzierbare Simulationsbeschreibungen liefern 
+
+Bewertung der Funktionsfägihkeit der Tools 
+
+Reichen die Standards?  
+
+Was hat gut funktioniert, was nicht? Was waren die Schwierigkeiten? 
+
+Gut für Diskussionsteil 
+
+Bachmann Modell kurz beschreiben 
+
+Übersicht, Tabelle, Welche Figures waren reproduzierbar, welche nicht? 
+
+Ansonsten eher generell über das Archive 
+
+Was ist der Schritt weiter i.Vg. zu Fully Featured Archive?
