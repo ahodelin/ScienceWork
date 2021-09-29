@@ -1,15 +1,42 @@
 \section*{Materials and methods} \label{matmet}
 
+We aimed to generate a fully featured \ac{combine} Archive of a dynamic pathway model investigating the role of suppressor of cytokine (SOCS) family members in JAK2/STAT5 signaling \cite{bachmannmodel}. Generation of the \ac{combine} Archive was performed in accordance with a recently published guideline from Schwarm and Waltemath \cite{combine}.
+
 The purpose of this project was divided into four groups. The tasks of each of them were the management of a documentation platform, review of exiting materials, comparison of provided models, graphical representation, and supply of a model script.
 
-To provide the model from Bachmann \textit{et. al.}\cite{bachmannmodel} as a Fully Featured COMBINE Archive, we have created a public repository using the open-source platform GitHub, with a CC0-1.0 License. We choose GitHub as a data management platform to supervise the course of the project because it provides an intuitive and easy customizable environment, along with some features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the directories documentation, model, experiment, and result.
+\subsection*{Set up of a collaborative working environment}
+To provide the model from Bachmann \textit{et. al.}\cite{bachmannmodel} as a Fully Featured \ac{combine} Archive, we have created a public repository using the open-source platform GitHub, with a CC0-1.0 License. We chose GitHub as a data management platform to supervise the course of the project because it provides an intuitive and easy customizable environment, along with some features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the directories documentation, model, experiment, and result.
 
-To achieve this goal, we research the literature about the Bachmann model and the COMBINE Archive, along with modeling file formats, checking the reproducibility of the COMBINE structure and software tools that had been used. In addition, we established communication channels, developed a rough schedule, provided a template for documentation, and periodically reviewed intermediate deliverables. 
+To achieve this goal, we research the literature about the Bachmann model and the \ac{combine} Archive, along with modeling file formats, checking the reproducibility of the \ac{combine} structure and software tools that had been used. In addition, we established communication channels, developed a rough schedule, provided a template for documentation, and periodically reviewed intermediate deliverables.
 
-In our research, we found six SBML-Bachmann models in two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels} (see Results). We choose the last model from 14th November 2019 to perform other tasks in our project, because it provides complementary files for the simulation.
+\subsection*{Model selection}
+In our research, we found six \ac{sbml}-Bachmann models in two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels} (see Results). We chose the last model from 14th November 2019 to perform other tasks in our project, because it provides complementary files for the simulation.
 
-We found and tested five software tools for the simulation of biological systems. \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online}, Systems Biology tool for the construction, modification, and simulation of kinetic models and the storage of curated models \cite{jwsonline}; on this repository was one of the found models. \hyperlink{https://cat.bio.informatik.uni-rostock.de/}{Webviewer Uni Rostock} (CombineArchiveWeb), a tool to visualize and manage COMBINE files \cite{combine}; this is the goal application of our project. \hyperlink{http://copasi.org/}{COPASI}, a software application for the simulation and analysis of biochemical networks and their dynamics \cite{copasi}. \hyperlink{https://sed-ml.org/}{SED-ML}, a suite of tools for creating, editing, simulating and validating SED-ML files \cite{sedml}. \hyperlink{https://tellurium.readthedocs.io/en/latest/}{Tellurium},  a tool to model, simulate and analyze biochemical systems \cite{tellurium}.
+\subsection*{Software tools and Versions}
+We found and tested five software tools for the simulation of biological systems:
+\begin{enumerate} 
+    \item \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online}, Systems Biology tool for the construction, modification, and simulation of kinetic models and the storage of curated models \cite{jwsonline}. On this repository was one of the found models.
+    \item \hyperlink{https://cat.bio.informatik.uni-rostock.de/}{Webviewer Uni Rostock} (CombineArchiveWeb), a tool to visualize and manage \ac{combine} files \cite{combine}; this is the goal application of our project. 
+    \item \hyperlink{http://copasi.org/}{\ac{copasi}}, a software application for the simulation and analysis of biochemical networks and their dynamics \cite{copasi}.
+    \item \hyperlink{https://sed-ml.org/}{\ac{sedml}}, a suite of tools for creating, editing, simulating and validating \ac{sedml} files \cite{sedml}. 
+    \item \hyperlink{https://tellurium.readthedocs.io/en/latest/}{Tellurium},  a tool to model, simulate and analyze biochemical systems \cite{tellurium}.
+\end{enumerate}
 
-One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the SBGN. Consequently, we performed research but we do not found any SBGN of this model. Therefore, we decided to create an SBGN network \textit{de novo} based on Le Novère \cite{sbgnnovere} and Touré \textit{et. al.} \cite{sbgntoure}. In this step, we select the SBGN language, and lastly, we created the Process Description (PD) map with the web tool Newt Editor (v3.0.3) \cite{newteditor}. To validate the SBGN-ML we imported it into several software and libraries, LibSBGN from Newt Editor, the open-source software Visualisation and Analysis of Networks containing Experimental Data (VANTED) \cite{vanted}, Krayon for SBGN \cite{krayon}, and SBGNViz \cite{sbgnviz}. Lastly, we cleaned up the map and colored the relevant features in the model to improve the developed map.
+\subsection*{Graphical representation}
+One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the \ac{sbgn}. We performed research but could not find any \ac{sbgn} of this model. Therefore, we decided to create an \ac{sbgn} network \textit{de novo} based on Le Novère \cite{sbgnnovere} and Touré \textit{et. al.} \cite{sbgntoure}. In this step, we selected the \ac{sbgn} language, and lastly, we created the \ac{pd} map with the web tool Newt Editor (v3.0.3) \cite{newteditor}. To validate the \ac{sbgnml} we, imported it into several software and libraries including LibSBGN from Newt Editor, the open-source software \ac{vanted} \cite{vanted}, Krayon for \ac{sbgn}\cite{krayon}, and SBGNViz \cite{sbgnviz}. Lastly, we cleaned up the map and colored the relevant features in the model to improve the developed map.
 
-We created new SED-ML files to reproduce some experiments from Bachmann  \textit{et. al.} in combination with another model. Following research for tools for building SED-ML files, we determined to divide our approach into, default simulations using the WebTool COPASI, and experiment-specific simulations using Tellurium. After the validation, the new  SED-ML, and the supplementary output files were inserted into the COMBINE archive.
+\subsection*{\acs{sedml} Generation and Validation}
+For the generation of new \ac{sedml} files to reproduce selected experiments performed by Bachmann \textit{et. al.}, we made use of two open source software tools:
+\begin{enumerate}
+    \item default simulation in \hyperlink{http://sysbioapps.spdns.org/SED-ML_Web_Tools}{\ac{sedml} WebTools} as a basis for experiment-specific simulations in \hyperlink{http://copasi.org/}{\ac{copasi}} (as described by Scharm \& Waltemath \cite{combine})
+    \item experiment-specific simulations in Tellurium, a Python platform for systems biology \cite{tellurium}
+\end{enumerate}
+
+The created \ac{sedml} files were validated in \ac{sedml} WebTools and integrated into the \ac{combine} archive. Subsequently, output files were created by
+
+\begin{enumerate}
+    \item simulating all \ac{sedml} files within the \ac{combine} archive using Tellurium and
+    \item loading individual \ac{sedml} files in \ac{copasi} or \ac{sedml} WebTools, and included in the \ac{combine} archive.
+\end{enumerate}
+
+\subsection*{Creation of the \acs{combine} Archive}
