@@ -1,14 +1,12 @@
 \section*{Discussion}
-\begin{itemize}
-    \item Answers to study questions
-    \item Strengths and weaknesses of the study
-    \item Results in relation to other studies
-    \item Meaning and generalisability of the study
-    \item Unanswered and new questions
-\end{itemize}
+Systems biology studies generate many data files for the simulation of biological systems. These data files can be stored in COMBINE archives, standardized containers that facilitate the exchange of information from simulation studies \cite{Bergmann.2014}, such as the fully-featured COMBINE archive described by Scharm \textit{et al.} \cite{combine}.
 
-"The purpose of discussion is that the study should be subjected to a critical analysis of the study results
-by the authors themselves. Any lessons learned - both with respect to study questions and the
-methodology - should be reported for others to learn from.
-A structured discussion as proposed below is often not required by the journal but it will ease the
-writing as well as the reading."  
+While we were able to re-create some (sub-) figures of the original paper using the model selected for this COMBINE archive, we encountered several problems. These will be addressed in separate GitHub issues for future reference (maybe for the authors of the original paper).
+
+In reference to our study questions we could show that an agile working environment enables a comprehensive co-working structure in an educational setting. Here we could effectively develop a fully-featured \ac{combine} archive and reproduce a vast majority of the results given in the original work. The strength of our work beside the technical and documental tasks is to point our missing data or variables in the original work. Due to restricted course duration the main shortcoming of our study is that we were not able to resolve those issues within the project duration.
+
+Given the vast extend of research and consecutive data in the field of system biology we could show that the assembly of a \ac{combine} archive is feasible, achievable and can be documented in a reproducible way with open source tools. This may be of utter importance for the future approach to systems medicine results. 
+
+Yet some questions remain unsolved at this time. We aimed to provide our SBGN model in a variety of formats to allow recurrence on the substitute files when the primary files are not applicable in a specific future application. Finally, we were able to provide different SBGN-ML 0.2 codes as well as a GraphML version of our model. The CellDesigner export did not work and also we provided no SBGN-ML 0.3 because we were not able to validate this with at least one other tool than Newt editor. Unfortunately, we were not able to further investigate the platform specific problems with exchange formats in detail as we experienced them, but provide a documentation for the community. During the time of our project, the CellDesigner export from Newt editor is already adressed in the discussion to an existing issue on GitHub (https://github.com/iVis-at-Bilkent/newt/issues/498). Also, we created a new issue adressing the manual modifications to the provided SBGN-ML version 0.2 main file to make it exchangeable to inform the developers of Newt editor (https://github.com/iVis-at-Bilkent/newt/issues/679).
+
+An interesting field for future projects is definitely the integration of semantic annotations and functional aspects of the model into the SBGN map, with promising publications and reports from the community. As the approach in [2] to automatically create a first draft of SBGN was not suitable for the existing SBML files of the Bachmann model in our project, development of a guideline for modification of the SBML file to improve automated creation of SBGN would be very helpful.
