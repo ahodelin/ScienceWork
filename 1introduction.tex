@@ -2,24 +2,47 @@
 
 
 \subsection*{Scientific background}
+\subsubsection*{The Reproducibility crisis}
+Reproducibility of results is one of the most fundamentals requirement for credibility in scientifc research \cite{tiwari2021reproducibility}. However, in recent years it became evident that a substantial part of study results are not reproducible. A recent systematic review found that almost 50\% of modeling studies could not be reproduced \cite{tiwari2021reproducibility}. Especially in systems biology and systems medicine, the increase in size and complexity proposes new challenges to share reproducible results. Therefore, several initiatives such as the \hyperlink{https://fair-dom.org/}{FAIDROM} or \hyperlink{http://co.mbine.org/}{COMBINE} were formed aiming to develop and provide standardization efforts and tools to enhance reproducibility in systems biology.
+
 \subsubsection*{The COMBINE archive format}
-The increase in size and complexity of simulation studies in systems biology and systems medicine proposes new challenges to sharing reproducible results. The \ac{combine} archive improves the coordination of standard formats for several features of simulation studies, such as \ac{sbml}, CellML, \ac{sbgn}, and \ac{sbrml}. These standards aim to encode, simulate and visualize biological models \cite{combine}. 
+On of these tools are so called \ac{combine} archives, which aim to improve the coordination of standard formats for several features of simulation studies, such as \ac{sbml}, CellML, \ac{sbgn}, and \ac{sbrml}. These standards aim to encode, simulate and visualize biological models \cite{combine}. At the moment, there is no comparable tool available, yet the number of modeling studies providing the data-set and meta-data in form of a \ac{combine} archives are limited. 
 
 As a result a \ac{combine} archive offers the unique opportunity to not only reproduce simulation results but also to access comprehensive metadata such as author information, publication IDs (e.g. \ac{doi}) and simulation details in one single file. The vast majority of this information usually  is stored in different data formats that require a bundle of software tools to handle. Combine instead brings a single executable file which is easy to access and comes with proper provenience information.
 
 It is obvious that this creates a much higher accessibility of complex data that derives from systems medicine and systems biology for researchers and provides a better reproducibility of scientific results.
 
 \subsubsection*{Agile working}
-Agile working has been a major drive for the evolution in working environments especially in information technologies. New definitions on how, where, with whom and when collaboration and the completion of tasks is done are enabled by digital cloud solutions and co-working platforms that integrate the allocation of tasks, versioning of content and the ad-hoc foramtion of teams. GitHub has been used as an essential common platform for managing software projects and supporting collaborative development. Now a day some educational projects have begun to adopt it for hosting and managing course content because it gets transparency features to create, reuse, and remix materials; and to monitor activity on assignments and projects \cite{github}. In the development of this COMBINE archive we dedicated ourselves to the \ac{fair}-principles and therefore built a completely publicly traceable working environment in git, that can be accessed via the link given in the appendices.
+Agile working has been a major drive for the evolution in working environments especially in information technologies. New definitions on how, where, with whom and when collaboration and the completion of tasks is done are enabled by digital cloud solutions and co-working platforms that integrate the allocation of tasks, versioning of content and the \textit{ad-hoc} formation of teams. GitHub has been used as an essential common platform for managing software projects and supporting collaborative development. Now a day some educational projects have begun to adopt it for hosting and managing course content because it gets transparency features to create, reuse, and remix materials; and to monitor activity on assignments and projects \cite{github}. In the development of this COMBINE archive we dedicated ourselves to the \ac{fair}-principles and therefore built a completely publicly traceable working environment in git, that can be accessed via the link given in the appendices.
 
+\subsubsection*{Dyamic Pathway Simulations}
+Dynamic pathway modeling is needed to describe the complex regulatory system of feedback regulators, to answer this question, Bachmann \textit{et. al.} built a dual negative feedback model of JAK2/STAT5 signaling in primary erythroid progenitor cells isolated from mouse fetal livers. \cite{bachmannmodel}.
 
+{\Huge Oli}... hier ist die Rererence für "Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2017" \cite{specificationsb}.
+% Reference may worth adding:
+
+% https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6167034/
+% Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2017
 
 
 \subsection*{Rationale for this study}
-Given the background of the only partially reproducible Bachman model the enviroment of the master degree class for \ac{bids} at the Graduate School Rhein-Neckar  in  collaboration  with  the  Medical  Informatics  for  Research  and  Care  in  University Medicine (MIRACUM Consortium) in Germany offered the unique opportunity to create a fully featured archive and reproduce the simulation content both for educational purposes and for scientific completion of the original work. 
+Given the background of the only partially reproducible dynamic pathway model of \ac{socs} family members in JAK2/STAT5 signaling from Bachmann \textit{et. al.} \cite{bachmannmodel} the environment of the master degree class for \ac{bids} at the Graduate School Rhein-Neckar  in  collaboration  with  the \ac{miracum} in Germany offered the unique opportunity to create a fully featured archive and reproduce the simulation content both for educational purposes and for scientific completion of the original work. 
 
 \subsection*{Objectives}
-The purpose of this study is to provide a fully featured \acs{combine}-archive including all simulation figures and easy to access simulation data. The secondary aim was to create an easy to use guideline on how to approach the compilation of a \acs{combine} archive out of an existing simulation model. ist combine format geeigent? welceh tools funktionieren gut?
+The primary aim of this study was to provide a fully featured \acs{combine}-archive including both scripts to reproduce all simulation figures and easy to access simulation data of a published modeling study \cite{bachmannmodel}. The secondary aim was to create an easy to use guideline on how to approach the compilation of a \acs{combine} archive out of an existing simulation model. The tertiary aim was to validate all generated scripts using established tools. Finally, we aimed to evaluate the used tools in terms of usability and assessed the completeness of the provided data to reproduce the entire study.
+
+\subsection*{Study design} %ggf. in die Objectives mit einbauen.
+
+\subsubsection*{Research questions}
+\subsubsection*{Analysis procedures}
+\subsubsection*{Validity procedures}
+
+\begin{enumerate}
+    \item Sichtung vorhandener Materialien; Komposition des COMBINE Archives; Dokumentationstemplate; Prüfung der Zwischenergebnisse
+    \item Vergleich der bereitgestellten SBML-Modelle, Auswahl und Bereitstellung ausführlicher Metadaten
+    \item Bereitstellung des SBGN-Modells (grafische Darstellung) 
+    \item Bereitstellung mind. eines SED-ML-Skripts (ggf. mehrere)
+\end{enumerate}
 
 %Sami und Felix machen Ergebnisse\\
 %Oliver und Abel machen Methoden
