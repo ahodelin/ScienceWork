@@ -11,20 +11,21 @@ The tasks of this project were distributed on  four teams and split into the sec
 \end{itemize}
 
 \subsection*{Setup of an agile working environment} \label{setupagwork}
-To provide the model from Bachmann et. al. \cite{bachmannmodel} as a Fully Featured \ac{combine} Archive, we created a public repository using the open-source platform GitHub, with a \ac{cc} CC0-1.0 license. We chose GitHub as a data management platform to supervise the course of the project because it provides an intuitive and easy customizable environment, along with some features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the directories documentation, model, experiment, and result.
+To provide the model from Bachmann \textit{et. al.} \cite{bachmannmodel} as a fully featured \ac{combine} archive, we created a public repository using the open-source platform GitHub, with a \ac{cc}0-1.0-license. We chose GitHub as a data management platform to supervise the course of the project as it provides an intuitive and easily customizable environment, along with features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the following directories:
 \begin{itemize}
-    \item documentation: files describing the model and its characteristics, e.g. original paper
-    \item model: files describing and encoding the biological system, e.g. \ac{sbml} format.
-    \item experiment: files describing and encoding the experimental setup, e.g. \ac{sedml}.
-    \item result: files obtained from running \textit{in silico} experiments, including plots and tables.
+    \item Documentation (files describing the model and its characteristics)
+    \item Model (files describing and encoding the biological system, e.g. \ac{sbml} format)
+    \item Experiment (files describing and encoding the experimental setup, e.g. \ac{sedml})
+    \item Result (files obtained from running \textit{in silico} experiments, including plots and tables)
 \end{itemize}
 
-To achieve this goal, we research the literature about the Bachmann model and the \ac{combine} Archive, along with modeling file formats, checking the reproducibility of the \ac{combine} structure and software tools that had been used. In addition, we established communication channels, developed a rough schedule, provided a template for documentation, and periodically reviewed intermediate deliverables.
+\textit{DIESER ABSCHNITT GEHÖRT HIER IRGENDWIE NICHT HIN ?!\\
+To achieve this goal, we research the literature about the Bachmann model and the \ac{combine} Archive, along with modeling file formats, checking the reproducibility of the \ac{combine} structure and software tools that had been used. In addition, we established communication channels, developed a rough schedule, provided a template for documentation, and periodically reviewed intermediate deliverables.}
 
 \subsection*{Systematic review of existing materials and comparison of provided models}
 In our research, we found five \ac{sbml}-Bachmann models in two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels} (see Baseline data). We chose the latest model from 14th November 2019 to perform other tasks in our project, because it provides complementary files for the simulation.
 
-\subsection*{Software tools and Versions}
+\subsubsection*{Software tools and Versions}
 We found and tested five software tools for the simulation of biological systems:
 \begin{enumerate} 
     \item \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online}, Systems Biology tool for the construction, modification, and simulation of kinetic models and the storage of curated models \cite{jwsonline}. On this repository was one of the found models.
@@ -36,8 +37,8 @@ We found and tested five software tools for the simulation of biological systems
 
 \subsection*{Graphical representation}
 One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the \ac{sbgn}. We performed research but could not find any \ac{sbgn} of this model. Therefore, we decided to create an \ac{sbgn} network \textit{de novo} based on Le Novère \cite{sbgnnovere} and Touré \textit{et. al.} \cite{sbgntoure}. In this step, we selected the \ac{sbgn} language, and lastly, we created the \ac{pd} map with the web tool Newt Editor (v3.0.3) \cite{newteditor}. To validate the \ac{sbgnml} we, imported it into several software and libraries including LibSBGN from Newt Editor, the open-source software \ac{vanted} \cite{vanted}, Krayon for \ac{sbgn}\cite{krayon}, and SBGNViz \cite{sbgnviz}. Lastly, we cleaned up the map and colored the relevant features in the model to improve the developed map.
-
-\subsection*{\acs{sedml} Generation and Validation}
+\subsection*{Supply of a model script}
+\subsubsection*{\acs{sedml} Generation and Validation}
 For the generation of new \ac{sedml} files to reproduce selected experiments performed by Bachmann \textit{et. al.}, we made use of two open source software tools:
 \begin{enumerate}
     \item default simulation in \hyperlink{http://sysbioapps.spdns.org/SED-ML_Web_Tools}{\ac{sedml} WebTools} as a basis for experiment-specific simulations in \hyperlink{http://copasi.org/}{\ac{copasi}} (as described by Scharm \& Waltemath \cite{combine})
