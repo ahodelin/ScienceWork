@@ -25,6 +25,8 @@ To provide the model from Bachmann \textit{et. al.} \cite{bachmannmodel} as a fu
 \subsection*{Systematic review of existing materials and comparison of provided models}
 In our systematic search, we found five \ac{sbml}-Bachmann models in two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels} (see Baseline data). We chose the latest model dating from 14th November 2019 as it provided complementary files for the simulation.
 
+
+\textsf{das hier sind eigentlich results:}\\
 \subsubsection*{Software tools and Versions}
 Our search revealed five software tools for the simulation of biological systems:
 \begin{enumerate} 
@@ -64,6 +66,13 @@ The created \ac{sedml} files were validated in \ac{sedml} WebTools and integrate
 
 The final assembly of our fully-featured \ac{combine} archive of the Bachmann model was executed in the web platform \textit{CombineArchiveWeb}. We used the same structure as described by Bachmann \textit{et. al.} (see 'setup of an agile working environment'), and extended the scaffold by additional sub-folders containing supplementary files. Thus we created a new empty archive with our credentials on the CombineArchiveWeb with the name \textsf{::bachmann}. The metadata section of our \ac{combine} archive includes a brief description of the study and the contact data of the members.
 
-The folder documentation includes the initial paper from Bachmann \textit{et. al.}  with its additional materials, the paper from Scharm \& Waltemath, and a \textsf{bib.file} with the used references in our project. In the model's folder are the file with the last version of the Bachmann model from 2019 (see Model selection) and the subfolder \textsf{sbgn}. This contains pictures, \ac{sbgnml} files, and other supplemantary files to visualize the model. The folder experiment has Python-scripts, \ac{sedml} files, and other additional files to support the simulation. The results of the different simulations and validations are in the folder result. This folder contains the subfolders Default, Fig(3 - 5), SuppFig9, and SuppFig9\_COPASI; these incorporate \ac{csv} files with tables, PDF files with reports, and pictures of the performed simulations with different tools; the subfolder Validation, in the folder result has the folders Test\_COPASI\_2021-06-28 and Test\_SWT\_2021-06-28, with subfolders and data files of the performed validations from \ac{copasi} and \ac{swt}.
+The folder 'documentation' includes the initial paper from Bachmann \textit{et. al.}  with its additional materials, the paper from Scharm \& Waltemath, and a \textsf{*.bib}-file with the references of our project. The 'model' folder contains the file with the latest version of the Bachmann model from 2019 (see 'Model selection') and the sub-folder \textsf{sbgn}. This (\textsf{this what?}) contains pictures, \ac{sbgnml} files, and other supplemantary files to visualize the model. 
 
-We could upload all data from our repository but report XML files for validations. On this step, the CobineArchiveWeb interface launches the following error: \textbf{Unknown Error: Cannot upload file}, therefore we created a new issue in the GitHub repository from CobineArchiveWeb but did not encounter the settlement of the problem during the project.
+The folder 'experiment' provides Python-scripts, \ac{sedml} files, and other additional files to support the simulation. The results of the different simulations and validations are in the folder 'result'. This folder also contains the sub-folders 'Default', 'Fig(3-5)', 'SuppFig9', and 'SuppFig9\_COPASI' that incorporate \ac{csv} files with tables, PDF files with reports, and pictures of the performed simulations with different tools.
+
+The subfolder 'validation' in the folder 'result' contains the additional folders 'Test\_ COPASI\_2021-06-28' and 'Test\_SWT\_2021-06-28' with data files of the performed validations from \ac{copasi} and \ac{swt}.
+
+\textsf{schwer verständlich:}\\
+We could upload all data from our repository but report XML files for validations. On this step, the CobineArchiveWeb interface launches the following error: \textsf{Unknown Error: Cannot upload file}, therefore we created a new issue in the GitHub repository from \textit{CobineArchiveWeb} but did not encounter the settlement of the problem during the project.
+
+The Archive can be accesses via the link in the 'appendices'-section.
