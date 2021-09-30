@@ -9,6 +9,12 @@ We found three models on the repository of BioModels. The first found model, \hy
 \subsection*{Generation of SED-ML files}
 
 \subsection*{Unexpected events and observations}
+\begin{itemize}
+    \item Some required parameters to simulate specific experimental conditions were not included in the model.
+\item Some model outputs are defined by observation functions and were not included as parameters in the model itself. It probably would be possible to define these parameters either in the \ac{sbml} file or in the \ac{sedml} files of the experiment based on information included in the supplementary material. However, we did not address this issue given the limited time frame of this project.
+\item Several experiments presented in the paper are based on testing a range of Epo levels. We could not fully reproduce these experiments, because it was not clear how to simulate different Epo concentrations using the model.
+\item The knockout of CIS and/or SOCS3 could not be simulated using the information provided in the paper.
+\end{itemize}
 
 \subsection*{Reproducibility}
 At the end of our project, we could build a fully-featured \ac{combine} archive and integrate the most generated files, reports and pictures of the Bachmann model in the web platform CombineArchiveWeb.
