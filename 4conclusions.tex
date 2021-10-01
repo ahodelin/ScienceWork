@@ -1,23 +1,15 @@
 \section*{Conclusions and Future work}
 
-"The conclusion summarizes the main findings, discusses the impact of the findings and
-how they relate back to the big picture described in the introduction section, gives
-recommendations by the author and provides a short outlook for future research."
-
-\subsection*{Summary of conclusions}
-In summary, we were able to reproduce many, but not all experiments. Several parameters required to reproduce individual plots were not included in the model itself and would have to be added manually based on details provided in the supplementary material. The specific problems encountered while attempting to reproduce the experiments will be addressed in separate GitHub issues for future reference. 
+In summary, in this case study we were able to reproduce a systems biology simulation model by Bachmann \textit{et al.} \cite{bachmannmodel} and add the necessary annotation to create a fully-featured \ac{combine} archive. This sprint collaboration was conducted in an agile environment using GuitHub that appeared to be a easy to use environment for team members of different experience to that tool. A fully publicly traceable documentation of the development and a reproducible simulation archive could be achieved in the context of a collaboratory educational sprint.
 
 \subsection*{Relation to existing evidence}
 
 \subsection*{Limitations}
-... To verbalize...
-\begin{itemize}
-    \item The XML reports from the validations could not be upload on the \textit{CobineArchiveWeb} interface.
-    \item \ac{copasi} is limited in its functionality to support simulations working with more than one model. This functionality is needed in our project to run simulations in the wildtype and overexpression conditions in parallel. We, therefore, changed our procedure and ultimately built and simulated \ac{sedml} files using Tellurium.
-\end{itemize}
+Several parameters required to reproduce the full extend of individual plots were not included in the original data itself and therefor could not be reproduced.  Given sthe sprint character of this collaboration we were not able to to added the missing data manually based on details provided in the supplementary material. 
+Also some technical issues hindered a barrier-free assembly of the archive. The \textit{CobineArchiveWeb} interface did not allow the XML reports from the validations to be be uploaded. Furthermore \ac{copasi} is limited in its functionality to support simulations working with more than one model. As this functionality is needed in our project to run simulations in the wildtype and overexpression conditions in parallel we changed our procedure and ultimately built and simulated \ac{sedml} files using Tellurium.
 
 
 \subsection*{Future work}
-
-%\\
-%\\
+The co-working environment in a GitHub appeared to be very easy to use and understand throughout the whole project team. We therefore conclude that a publicly available documentation of scientific collaboration and the development of repositories, code and archives can be facilitating \ac{fair} handling of research both in the process of making as well as in the handling of results itself.
+The authors suggest that, given the easy to access and freely available software tools, more researchers will take the effort to share their work in a traceable and reusable manner. Also in the context of corporate class work our results indicate a high potential to form a precedent for future development of \ac{fair} research output.
+\pagebreak
