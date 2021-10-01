@@ -11,7 +11,7 @@ The tasks of this project were distributed on  four teams and split into the sec
 \end{itemize}
 
 \subsection*{Setup of an agile working environment} \label{setupagwork}
-To provide the model from Bachmann \textit{et. al.} \cite{bachmannmodel} as a fully featured \ac{combine} archive, we created a public repository using the open-source platform GitHub, with a \ac{cc}0-1.0-license. We chose GitHub as a data management platform to supervise the course of the project as it provides an intuitive and easily customizable environment, along with features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the following directories:
+To provide the model from Bachmann \textit{et al.} \cite{bachmannmodel} as a fully featured \ac{combine} archive, we created a public repository using the open-source platform GitHub, with a \ac{cc}0-1.0-license. We chose GitHub as a data management platform to supervise the course of the project as it provides an intuitive and easily customizable environment, along with features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the following directories:
 \begin{itemize}
     \item Documentation (files describing the model and its characteristics)
     \item Model (files describing and encoding the biological system, e.g. \ac{sbml} format)
@@ -42,14 +42,14 @@ Our search revealed five software tools for the simulation of biological systems
 \end{enumerate}
 
 \subsection*{Graphical representation}
-One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the \ac{sbgn}. We performed research but could not find any \ac{sbgn} of this model. Therefore, we decided to create an \ac{sbgn} network \textit{de novo} based on previous works of Le Novère \cite{sbgnnovere} and Touré \textit{et. al.} \cite{sbgntoure}. In this step, we selected the \ac{sbgn} language, and lastly created the \ac{pd} map with the web tool Newt Editor (v3.0.3) \cite{newteditor}. 
+One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the \ac{sbgn}. We performed research but could not find any \ac{sbgn} of this model. Therefore, we decided to create an \ac{sbgn} network \textit{de novo} based on previous works of Le Novère \cite{sbgnnovere} and Touré \textit{et al.} \cite{sbgntoure}. In this step, we selected the \ac{sbgn} language, and lastly created the \ac{pd} map with the web tool Newt Editor (v3.0.3) \cite{newteditor}. 
 
 To validate the \ac{sbgnml} we, imported it into several software and libraries including LibSBGN from Newt Editor, the open-source software \ac{vanted} \cite{vanted}, Krayon for \ac{sbgn} \cite{krayon}, and SBGNViz \cite{sbgnviz}. Lastly, we cleaned up the map and colored the relevant features in the model to improve the developed map.
 
 \subsection*{Supply of a model script}
 \textsf{this section needs maintainance. soll das wirklich hier so stehen? oder ist das der abschnitt über die auswahl des richtigen files?}
 \subsubsection*{\acs{sedml} Generation and Validation}
-For the development of new \ac{sedml} files in order to reproduce the simulations performed by Bachmann \textit{et. al.}, we made use of two open source software tools:
+For the development of new \ac{sedml} files in order to reproduce the simulations performed by Bachmann \textit{et al.}, we made use of two open source software tools:
 \begin{enumerate}
     \item default simulation in \hyperlink{http://sysbioapps.spdns.org/SED-ML_Web_Tools}{\ac{sedml} WebTools} as a basis for experiment-specific simulations in \hyperlink{http://copasi.org/}{\ac{copasi}} (as described by Scharm \& Waltemath \cite{combine})
     \item experiment-specific simulations in Tellurium, a Python platform for systems biology \cite{tellurium}
@@ -64,15 +64,8 @@ The created \ac{sedml} files were validated in \ac{sedml} WebTools and integrate
 
 \subsection*{Assembly of the \acs{combine} archive}
 
-The final assembly of our fully-featured \ac{combine} archive of the Bachmann model was executed in the web platform \textit{CombineArchiveWeb}. We used the same structure as described by Bachmann \textit{et. al.} (see 'setup of an agile working environment'), and extended the scaffold by additional sub-folders containing supplementary files. Thus we created a new empty archive with our credentials on the CombineArchiveWeb with the name \textsf{::bachmann}. The metadata section of our \ac{combine} archive includes a brief description of the study and the contact data of the members.
+The final assembly of our fully-featured \ac{combine} archive of the Bachmann model was executed in the web platform \textit{CombineArchiveWeb}. We used the same structure as described by Bachmann \textit{et al.} (see 'setup of an agile working environment'), and extended the scaffold by additional sub-folders containing supplementary files. Thus we created a new empty archive with our credentials on the \textit{CombineArchiveWeb} with the name \textsf{::bachmann}. The metadata section of our \ac{combine} archive includes a brief description of the study and the contact data of the members.
 
-The folder 'documentation' includes the initial paper from Bachmann \textit{et. al.}  with its additional materials, the paper from Scharm \& Waltemath, and a \textsf{*.bib}-file with the references of our project. The 'model' folder contains the file with the latest version of the Bachmann model from 2019 (see 'Model selection') and the sub-folder \textsf{sbgn}. This (\textsf{this what?}) contains pictures, \ac{sbgnml} files, and other supplemantary files to visualize the model. 
-
-The folder 'experiment' provides Python-scripts, \ac{sedml} files, and other additional files to support the simulation. The results of the different simulations and validations are in the folder 'result'. This folder also contains the sub-folders 'Default', 'Fig(3-5)', 'SuppFig9', and 'SuppFig9\_COPASI' that incorporate \ac{csv} files with tables, PDF files with reports, and pictures of the performed simulations with different tools.
-
-The subfolder 'validation' in the folder 'result' contains the additional folders 'Test\_ COPASI\_2021-06-28' and 'Test\_SWT\_2021-06-28' with data files of the performed validations from \ac{copasi} and \ac{swt}.
-
-\textsf{schwer verständlich:}\\
-We could upload all data from our repository but report XML files for validations. On this step, the CobineArchiveWeb interface launches the following error: \textsf{Unknown Error: Cannot upload file}, therefore we created a new issue in the GitHub repository from \textit{CobineArchiveWeb} but did not encounter the settlement of the problem during the project.
+The folder 'documentation' includes the initial paper from Bachmann \textit{et al.}  with its additional materials, the paper from Scharm \& Waltemath, and the file 'SystemsBiology.bib' with the used literature in our project. 'model' contains files with the latest version of the Bachmann model from 2019 (see 'Model selection') and the sub-folder \textsf{sbgn}, it contains pictures, \ac{sbgnml} files, and other supplementary files to visualize the model. The folder 'experiment' provides Python-scripts, \ac{sedml} files, and other additional files to support the simulation. The results of the different simulations and validations are in the folder 'result'. This folder also contains the sub-folders 'Default', 'Fig(3-5)', 'SuppFig9', and 'SuppFig9\_COPASI' that incorporate \ac{csv} files with tables, PDF files with reports, and pictures of the performed simulations with different tools.  'result' contains a sub-folder 'validation'  including the additional folders 'Test\_ COPASI\_2021-06-28' and 'Test\_SWT\_2021-06-28' with data files of the performed validations from \ac{copasi} and \ac{swt}.
 
 The Archive can be accesses via the link in the 'appendices'-section.
