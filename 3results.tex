@@ -19,9 +19,29 @@ To confirm the validity of the developed SBGN we used the integrated LibSBGN-bas
 
 \subsection*{\acf{sedml} results}
 
-Following a review of available tools for creating SED-ML files \cite{sedmltool} we decided on two separate approaches. Firstly we conducted default simulation in SED-ML WebTools as a basis for experiment-specific simulations in COPASI (as described by Scharm \textit{et al.} \cite{combine}). Secondly we performed experiment-specific simulations in Tellurium, a Python platform for systems biology \cite{tellurium}. Tellurium includes a number of pre-installed Python libraries, plugins and tools for biological modelling and can be used via any Python frontend. We used Google Colaboratory (Colab), a cloud-based Jupyter notebook service for collaborative Python programming. The detailled documentation to the script can be found in the GitHub.
+\subsubsection*{Selection of a SED-ML Tool}
+
+Our search revealed five software tools for the simulation of biological systems:
+\begin{enumerate} 
+    \item \hyperlink{http://copasi.org/}{\textbf{\ac{copasi}}}\\A software application for the simulation and analysis of biochemical networks and their dynamics \cite{copasi}.
+   
+    \item \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{\textbf{JWS Online}}\\ Systems Biology tool for the construction, modification, and simulation of kinetic models and the storage of curated models \cite{jwsonline}. On this repository was one of the found models.
+   
+    \item \hyperlink{https://sed-ml.org/}{\textbf{\ac{swt}}}\\A suite of tools for creating, editing, simulating and validating \ac{sedml} files \cite{sedml}. 
+   
+    \item \hyperlink{https://tellurium.readthedocs.io/en/latest/}{\textbf{Tellurium}}\\ A tool to model, simulate and analyze biochemical systems \cite{tellurium}.
+    
+\end{enumerate}
+
+\subsubsection*{Generation of SED-ML files}
+
+Following a review of available tools for creating SED-ML files \cite{sedmltool} we decided on two separate approaches. Firstly, we conducted default simulation in SED-ML WebTools as a basis for experiment-specific simulations in COPASI (as described by Scharm \textit{et al.} \cite{combine}). Secondly, we performed experiment-specific simulations in Tellurium, a Python platform for systems biology \cite{tellurium}. Tellurium includes a number of pre-installed Python libraries, plugins and tools for biological modelling and can be used via any Python frontend. We used Google Colaboratory (Colab), a cloud-based Jupyter notebook service for collaborative Python programming. The detailled documentation to the scripts are provided on our GitHub-Repository.
+
+\subsubsection*{Simulation results}
+Figure shows the 
 
 The created SED-ML files were validated in SED-ML WebTools and integrated into the COMBINE archive. Subsequently the output files were created by simulating all SED-ML files within the COMBINE archive using Tellurium and loading individual SED-ML files in COPASI or SED-ML WebTools. 
+
 
 \subsection*{Unexpected events and observations}
 Interestingly some required parameters to simulate specific experimental conditions were not included in the model. That way some model outputs are defined by observation functions that were not included as parameters in the model itself. 
