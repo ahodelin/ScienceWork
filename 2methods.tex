@@ -10,7 +10,7 @@ The tasks of this project were distributed on  four teams and split into the sec
 \end{itemize}
 
 \subsection*{Setup of an agile working environment} \label{setupagwork}
-To provide the model from Bachmann \textit{et al.} \cite{bachmannmodel} as a fully featured \ac{combine} archive, we created a public repository using the open-source platform GitHub, with a \ac{cc}0-1.0-license. We chose GitHub as a data management platform to supervise the course of the project as it provides an intuitive and easily customizable environment, along with features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the following directories:
+To provide the model from Bachmann \textit{et al.} \cite{bachmannmodel} as a fully featured \ac{combine} archive, we created a \hyperref[https://github.com/ahodelin/Bachmann_Archive]{public repository} using the open-source platform GitHub, with a \ac{cc}0-1.0-license. We chose GitHub as a data management platform to supervise the course of the project as it provides an intuitive and easily customizable environment, along with features for documentation, and agile project management \cite{github}. This repository contains the proposal directory's structure from Scharm \& Waltemath \cite{combine} with the following directories:
 \begin{itemize}
     \item Documentation (files describing the model and its characteristics)
     \item Model (files describing and encoding the biological system, e.g. \ac{sbml} format)
@@ -22,19 +22,18 @@ To provide the model from Bachmann \textit{et al.} \cite{bachmannmodel} as a ful
 In our systematic search, we found five \ac{sbml}-Bachmann models in two different repositories, \hyperlink{https://www.systemsmedicine.net/posts/jws-online-biological-systems-modelling}{JWS Online} and \hyperlink{https://www.ebi.ac.uk/biomodels/}{BioModels} (see Baseline data). We chose the latest model dating from 14th November 2019 as it provided complementary files for the simulation.
 
 \subsection*{Graphical representation}
-One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the \ac{sbgn}. We performed research but could not find any \ac{sbgn} of this model. Therefore, we decided to create an \ac{sbgn} network \textit{de novo} based on previous works of Le Novère \cite{sbgnnovere} and Touré \textit{et al.} \cite{sbgntoure}. In this step, we selected the \ac{sbgn} language, and lastly created the \ac{pd} map with the web tool Newt Editor (v3.0.3) \cite{newteditor}. 
+
+One of the objectives of our project was to provide a standardized graphical representation of the Bachmann model based on the \ac{sbgn}. We performed research one the \hyperlink{https://sbgn.github.io/software}{SBGN website} providing links to archives and databases, but could not find any existing \ac{sbgn} of this model. We decided to create an \ac{sbgn} network \textit{de novo} based on previous works of Le Novère \cite{sbgnnovere} and Touré \textit{et al.} \cite{sbgntoure}. In this step, we selected the \ac{sbgn} language, and lastly created the \ac{pd} map with the web tool Newt Editor (v3.0.3) \cite{newteditor}.
 
 To validate the \ac{sbgnml} we, imported it into several software and libraries including LibSBGN from Newt Editor, the open-source software \ac{vanted} \cite{vanted}, Krayon for \ac{sbgn} \cite{krayon}, and SBGNViz \cite{sbgnviz}. Lastly, we cleaned up the map and colored the relevant features in the model to improve the developed map.
 
 \subsection*{Supply of one or several simulation scripts}
+
 The simulation descriptions to reproduce selected experiments from Bachmann \textit{et al.} \cite{bachmannmodel} in combination with the selected model were provided as \hyperlink{https://sed-ml.org/}{\acs{sedml} Level 1 Version 3 files}. \ac{sedml} files were chosen because they fulfill
-the recently published Minimum Information about a Simulation Experiment \ac{MIASE} guidelines (computer-readable exchange format, provision of XML schema).
+the recently published Minimum Information about a Simulation Experiment \ac{MIASE} guidelines (computer-readable exchange format, provision of XML schema). 
 
-\subsubsection*{\acs{sedml}-Tools: Review and Selection of }
 An overview of existing tools to generate \ac{sedml} files was obtained from the \hyperlink{http://sed-ml.org/}{\acs{sedml} website}, including a brief description and information on supported model languages. Based on this overview as well as previous experience, we decided to test several different tools in order to create, edit and export \ac{sedml} files for specific experiments using the selected SBML model. 
-
-\subsubsection*{\acs{sedml}-Files: Generation and Validation}
-Initially, we followed the steps taken by Scharm \& Waltemath \cite{combine} to generate a default simulation using \hyperlink{http://sysbioapps.spdns.org/SED-ML_Web_Tools}{\acs{sedml} WebTools Version 2.4} and modified this for a specific experiment in \hyperlink{http://copasi.org/}{\ac{copasi}} v.4.33.246 \cite{copasi}. However, given the type of plots to be created, we eventually decided to generate experiment-speficifc \ac{sedml} files with Tellurium v2.2.0 \cite{tellurium} in order to reproduce the experiments presented by Bachmann \textit{et al.} \cite{bachmannmodel}. Finally, the created \ac{sedml} files were validated in \ac{sedml} WebTools and integrated into the \ac{combine} archive.
+Initially, we followed the steps taken by Scharm \& Waltemath \cite{combine} to generate a default simulation using \hyperlink{http://sysbioapps.spdns.org/SED-ML_Web_Tools}{\acs{sedml} WebTools Version 2.4} and modified this for a specific experiment in \hyperlink{http://copasi.org/}{\ac{copasi}} v.4.33.246 \cite{copasi}. However, given the type of plots to be created, we eventually decided to generate experiment-speficifc \ac{sedml} files with Tellurium v2.2.0 \cite{tellurium} in order to reproduce the experiments presented by Bachmann \textit{et al.} \cite{bachmannmodel}. We used \hyperref[https://colab.research.google.com/notebooks/welcome.ipynb?hl=de]{Google Colaboratory} (Colab), a cloud-based Jupyter notebook service for collaborative Python programming and loaded our scripts to our GitHub repository. Next, the created \ac{sedml} files were validated using \ac{sedml} WebTools. Finally, all ac{sedml} files (including the associated Colab notebooks, output files (plots and tables) and validation results) were integrated into the \ac{combine} archive.
 
 \subsection*{Assembly of the \acs{combine} archive}
 
